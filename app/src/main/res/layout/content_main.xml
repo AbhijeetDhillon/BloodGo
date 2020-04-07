@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.asdtechlabs.bloodbank.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@color/colorWhites"
+    android:orientation="vertical">
+
+<ProgressBar
+    android:id="@+id/progress_barMain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/donateBloodMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donate"
+            android:layout_weight="1"
+            android:onClick="DonateBlood"
+            android:gravity="center"
+            android:padding="15dp"
+            />
+        <TextView
+            android:id="@+id/requestBloodMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request"
+            android:layout_weight="1"
+            android:onClick="RequestBlood"
+            android:gravity="center"
+            android:padding="15dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/locationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/location"
+                android:hint="Enter Location"
+                style="@style/MyEditText"
+                android:layout_weight="0.9"
+                />
+
+            <TextView
+                android:id="@+id/currentLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1.0"
+                android:text="Use Current Location"
+                style="@style/ChangePreferences"
+                android:gravity="right"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_below="@id/locationText"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyEditText"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/places_recycler_view"
+            android:background="#FFF"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationText">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="CLOSE"
+        android:gravity="center"
+        android:textColor="#FFFB0F0E"
+        />
+
+</LinearLayout>

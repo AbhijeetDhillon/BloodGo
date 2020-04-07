@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asdtechlabs.bloodbank.RequestScreen2"
+    android:background="#ffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/noDonor"
+            android:text="No Donors Found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/changePreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Request Filters"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        style="@style/ChangePreferences"/>
+
+    <Button
+        android:id="@+id/endDrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        style="@style/ButtonActiveBottom"
+        android:text="End Drive"
+        android:textSize="14sp"
+        android:background="@drawable/button_red_activated"
+        />
+        <LinearLayout
+            android:id="@+id/switchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/changePreferences"
+            android:orientation="horizontal"
+
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/donor"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@style/Donors"
+                android:text="Donors"
+                android:gravity="center"
+                android:background="@drawable/redhighlighter"
+                android:layout_margin="20dp"
+                android:padding="3dp"
+                />
+
+            <TextView
+                android:id="@+id/accepted"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@style/Accepted"
+                android:text="Accepted"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:padding="3dp"
+                />
+
+        </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchButton"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Select all"/>
+
+        <TextView
+            android:id="@+id/requestall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/switchButton"
+            android:text="Request All"
+            android:textColor="#FFFB0F0E"
+            style="@style/Request"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/checkbox"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="20dp"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        style="@style/ConditionsDescription"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:text="Click “YES” to notify seeker that you are on the way!"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/donorLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="YES, I HAVE LEFT"
+        android:gravity="center"
+        style="@style/ButtonActiveBottom"
+        android:background="@drawable/button_red_activated"/>
+    <TextView
+        android:id="@+id/goBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="GO BACK"
+        android:gravity="center"
+        android:textColor="#FF444444"
+
+        />
+
+</LinearLayout>

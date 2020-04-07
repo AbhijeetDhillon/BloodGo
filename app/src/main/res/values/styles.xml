@@ -1,0 +1,173 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#fb0f0e</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">#FF000000</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+    <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/poppinssemibold</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"  >
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/poppinssemibold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style 	name="BloodBank">
+    <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/poppins</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textStyle">bold</item>
+    </style>
+
+    <style	name="BloodGroup">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style	name="Proceed">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/colorRed</item>
+    </style>
+
+    <style	name="SmallText"	>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FF7C7C7C</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonInActiveBottom" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FF444444</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="itemBackground">@color/colorWhites</item>
+    </style>
+
+    <style name="ButtonActiveBottom" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="itemBackground">@color/colorRed</item>
+    </style>
+
+    <style name="ChangePreferences">
+    <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+    <item name="android:textColor">#FF002BFF</item>
+    <item name="android:textSize">12sp</item>
+    </style>
+
+    <style		name="Donors">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FF444444</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#FFFFFF</item>
+
+    </style>
+
+    <style		name="Accepted">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FF898989</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style		name="Name">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FF444444</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style		name="Request">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FFFB0F0E</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style		name="DonorName"	>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FF444444</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style		name="Bottles">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FF444444</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style		name="Conditions">
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/montserrat</item>
+        <item name="android:textColor">#FF444444</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style		name="ConditionsDescription">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FF8E8E8E</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="My_Theme_Title" parent="Theme.AppCompat.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowTitleSize">35dp</item>
+        <item name="android:windowTitleBackgroundStyle">@android:color/black</item>
+        <item name="android:background">@color/colorRed</item>
+    </style>
+
+    <style name="MyEditText">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FF444444</item>
+    </style>
+
+    <style	name="GeneralText">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="BlackTheme" parent="FirebaseUI">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/colorWhites</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorControlNormal">@color/colorRed</item>
+        <item name="colorControlActivated">@color/colorRed</item>
+        <item name="colorControlHighlight">@color/colorRed</item>
+        <item name="colorPrimary">#fb0f0e</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#fb0f0e</item>
+        <item name="android:buttonStyle">@style/Proceed</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorSecondary">#000000</item>
+        <item name="android:textColorHint">#000000</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat</item>
+    </style>
+
+</resources>

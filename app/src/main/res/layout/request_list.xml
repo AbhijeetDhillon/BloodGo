@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/list_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        card_view:cardElevation="10dp"
+        card_view:cardPreventCornerOverlap="false"
+        app:contentPadding="5dp"
+        android:layout_margin="5dp"
+        >
+
+        <!-- add you views or other stuff here -->
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Name of the Person"
+            style="@style/Name"
+            android:maxLength="14"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:text="Distance"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/requestBlood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFB0F0E"
+        style="@style/Request"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text=""
+        style="@style/Request"
+        android:textColor="#ffffff"
+        android:visibility="visible"/>
+    <ImageView
+        android:id="@+id/callButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toLeftOf="@+id/track"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/call"
+        android:visibility="gone"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

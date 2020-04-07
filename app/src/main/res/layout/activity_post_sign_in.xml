@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asdtechlabs.bloodbank.PostSignIn"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#FFFB0F0E"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:elevation="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BloodGo"
+            android:gravity="center"
+            style="@style/BloodBank"
+            />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FULL NAME"
+            android:textColor="#FF7C7C7C"
+            style="@style/SmallText"
+            android:layout_margin="5dp"
+            />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:hint="Enter Full Name"
+                style="@style/MyEditText"
+                />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOCATION"
+            android:textColor="#FF7C7C7C"
+            style="@style/SmallText"
+            android:layout_margin="5dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/currentLocationPostSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Get my location"
+            style="@style/ChangePreferences"
+            android:layout_margin="5dp"
+            android:onClick="GetLocation"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationPostSignIn"
+                android:text="Set to your Current Location"
+                style="@style/MyEditText"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR BLOOD GROUP"
+            android:textColor="#FF7C7C7C"
+            style="@style/SmallText"
+            android:layout_margin="5dp"
+            />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:id="@+id/ap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A+"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/blood_group"
+            android:layout_margin="5dp"
+            style="@style/BloodGroup"/>
+
+        <TextView
+            android:id="@+id/an"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A-"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/blood_group"
+            android:layout_margin="5dp"
+            style="@style/BloodGroup"/>
+
+        <TextView
+            android:id="@+id/bp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B+"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/blood_group"
+            android:layout_margin="5dp"
+            style="@style/BloodGroup"/>
+
+        <TextView
+            android:id="@+id/bn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B-"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/blood_group"
+            android:layout_margin="5dp"
+            style="@style/BloodGroup"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/op"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O+"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/blood_group"
+                android:layout_margin="5dp"
+                style="@style/BloodGroup"/>
+
+            <TextView
+                android:id="@+id/on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O-"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/blood_group"
+                android:layout_margin="5dp"
+                style="@style/BloodGroup"/>
+
+            <TextView
+                android:id="@+id/abp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AB+"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/blood_group"
+                android:layout_margin="5dp"
+                style="@style/BloodGroup"/>
+
+            <TextView
+                android:id="@+id/abn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AB-"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/blood_group"
+                android:layout_margin="5dp"
+                style="@style/BloodGroup"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I WISH TO"
+            android:textColor="#FF7C7C7C"
+            style="@style/SmallText"
+            android:layout_margin="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/donate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Donate Blood"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/blood_group"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                style="@style/BloodGroup"
+                android:onClick="donateBlood"
+
+                />
+
+            <TextView
+                android:id="@+id/seek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Receive Blood"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/blood_group"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                style="@style/BloodGroup"
+                android:onClick="seekBlood"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+        <TextView
+        android:id="@+id/proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_deactive"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:text="PROCEED"
+        android:gravity="center"
+        style="@style/Proceed"
+        android:onClick="Proceed"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backgrounddessign"
+            />
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
